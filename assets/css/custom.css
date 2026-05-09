@@ -1,4 +1,10 @@
 /* Add here all your css styles (customizations) */
+
+/* evita scroll horizontal por desborde en móviles con pantalla pequeña */
+main {
+	overflow-x: hidden;
+}
+
 img.fitsize {
     width: 200px; /* You can set the dimensions to whatever you want */
     height: 200px;
@@ -12,6 +18,20 @@ html {
 
 .social-network-link {
 	display: inline;
+}
+
+/* evitar que las imágenes de los sponsors rompan el scroll */
+.sponsors,
+.sponsors .media,
+.sponsors span {
+    max-width: 100%;
+    min-width: 0;
+}
+
+.sponsors img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 767px) {

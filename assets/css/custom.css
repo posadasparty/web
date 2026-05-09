@@ -11,6 +11,15 @@ img.fitsize {
     object-fit: cover;
 }
 
+.hero {
+	padding-top: 110px;
+}
+
+@media (max-width: 767px) {
+.hero {
+}
+}
+
 html {
 	cursor: url('../img/cursors/cursor_wait.cur'), progress;
 	cursor: url('../img/cursors/cursor.cur'), auto;
@@ -30,8 +39,10 @@ p.text-center {
 /* sponsors */
 
 h3, .h3 {
-  color: #fff;
-  margin-bottom: 30px;
+	color: #fff;
+	margin-top: 35px;
+	font-size: 22px;
+	margin-bottom: 15px;
 }
 
 .sponsors,
@@ -194,4 +205,83 @@ footer #contact {
         padding-top: 12px;
         padding-bottom: 12px;
     }
+}
+
+/* fondo negro y texto oscuro invertido */
+html,
+body,
+main,
+section,
+#home,
+#registro,
+#otherActivities,
+.g-bg-white,
+.g-bg-white-opacity-0_9,
+.g-bg-white--hover:hover,
+.g-theme-bg-gray-light-v1 {
+    background-color: #000 !important;
+}
+
+body,
+p,
+li,
+address,
+.g-color-black,
+.g-color-black *,
+.g-theme-color-gray-dark-v1,
+.g-theme-color-gray-dark-v2,
+.g-theme-color-gray-dark-v3,
+.g-theme-color-blue-dark-v2,
+[class*="g-color-gray-dark"] {
+    color: #e7e7e7 !important;
+}
+
+p.g-color-white,
+p .g-color-white,
+li.g-color-white,
+li .g-color-white,
+address.g-color-white,
+address .g-color-white {
+    color: #e7e7e7 !important;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+h1.g-color-black, .h1.g-color-black,
+h2.g-color-black, .h2.g-color-black,
+h3.g-color-black, .h3.g-color-black,
+h4.g-color-black, .h4.g-color-black,
+h5.g-color-black, .h5.g-color-black,
+h6.g-color-black, .h6.g-color-black,
+h1.g-color-white, .h1.g-color-white,
+h2.g-color-white, .h2.g-color-white,
+h3.g-color-white, .h3.g-color-white,
+h4.g-color-white, .h4.g-color-white,
+h5.g-color-white, .h5.g-color-white,
+h6.g-color-white, .h6.g-color-white {
+    color: #fff !important;
+}
+
+.dark-theme .nav-item .nav-link,
+.u-header__section.g-bg-white-opacity-0_9 .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.dark-theme .nav-item .nav-link:hover,
+.dark-theme .nav-item.active .nav-link,
+.u-header__section.g-bg-white-opacity-0_9 .nav-item .nav-link:hover,
+.u-header__section.g-bg-white-opacity-0_9 .nav-item.active .nav-link {
+    color: #f73859 !important;
+}
+
+.sponsor-logo {
+    background-color: #fff !important;
+}
+
+.sponsor-logo--dark {
+    background-color: #000 !important;
 }

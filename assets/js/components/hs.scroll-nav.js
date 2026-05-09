@@ -187,7 +187,19 @@
 
     if(scrollTop + $(window).height() === $(document).height()) {
 
-      this.current = this._items.last().data('HSScrollNavSection');
+      this._items.each(function(i, el){
+
+        var Section = $(el).data('HSScrollNavSection');
+
+        if(Section.section.length && (!current || Section.offset > current.offset)) {
+          current = Section;
+        }
+
+      });
+
+      if(!current) return;
+
+      this.current = current;
 
       this.unhighlight();
       this.current.highlight();
@@ -201,7 +213,7 @@
       var Section = $(el).data('HSScrollNavSection'),
           $section = Section.section;
 
-      if(scrollTop > Section.offset) {
+      if($section.length && scrollTop > Section.offset && (!current || Section.offset > current.offset)) {
         current = Section;
       }
 

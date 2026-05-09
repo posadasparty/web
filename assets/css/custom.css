@@ -20,6 +20,13 @@ html {
 	display: inline;
 }
 
+/* párrafos alineados a la izquierda aunque el contenedor esté centrado */
+p,
+.text-center p,
+p.text-center {
+    text-align: left !important;
+}
+
 /* sponsors */
 
 h3, .h3 {

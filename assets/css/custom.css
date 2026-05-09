@@ -158,3 +158,33 @@ footer #contact {
 .gt-nvframe{display:none !important;}
 .goog-te-banner-frame{display:none !important;}
 /* body#posadasbody{top:0px !important;} */
+
+/* botón scroll to top con estilo oscuro */
+.u-go-to-v1,
+.u-go-to-v1:focus,
+.u-go-to-v1:hover,
+.u-go-to-v1:focus:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 17, 0.6);
+}
+
+.u-go-to-v1:hover,
+.u-go-to-v1:focus:hover {
+    background-color: rgba(0, 0, 17, 0.9);
+}
+
+/* cabecera y menú móvil sin transparencia al desplegar */
+#js-header .u-header__section {
+    transition: background-color 0.35s ease;
+}
+
+#js-header .u-header__section.navbar-menu-open {
+    background-color: rgb(22, 26, 39) !important;
+}
+
+@media (max-width: 991px) {
+    #js-header .navbar-collapse {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}

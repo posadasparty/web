@@ -29,6 +29,18 @@ html {
 	display: inline;
 }
 
+.event-video-effect {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.event-video-effect iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 /* párrafos alineados a la izquierda aunque el contenedor esté centrado */
 p,
 .text-center p,

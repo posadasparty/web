@@ -46,7 +46,7 @@
         <div class="light-theme u-header__section g-bg-darkblue-opacity-0_7 g-transition-0_3 g-py-10"
              data-header-fix-moment-exclude="light-theme g-bg-darkblue-opacity-0_7"
              data-header-fix-moment-classes="dark-theme u-shadow-v18 g-bg-white-opacity-0_9">
-          <nav class="navbar navbar-expand-lg g-py-0">
+          <nav class="navbar navbar-expand-md g-py-0">
             <div class="container g-pos-rel">
               <!-- Logo -->
               <a href="#" class="js-go-to navbar-brand u-header__logo"
@@ -61,42 +61,51 @@
               </a>
               <!-- End Logo -->
 
-              <!-- Navigation -->
-              <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar" data-mobile-scroll-hide="true">
-                <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--lg ml-auto">
-                  <li class="nav-item g-mr-15--lg g-mb-7 g-mb-0--lg active">
-                    <a href="#home" class="nav-link p-0">Inicio <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#whatis" class="nav-link p-0">¿Qué es?</a>
-                  </li>
-                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#about" class="nav-link p-0">Competiciones</a>
-                  </li>
-                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#guests" class="nav-link p-0">Normativa</a>
-                  </li>
-                  <li class="nav-item g-mx-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#gallery" class="nav-link p-0">Galería</a>
-                  </li>
-                  <li class="nav-item g-ml-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#contact" class="nav-link p-0">Contacto</a>
-                  </li>
-                  <li class="nav-item g-ml-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="#registro" class="nav-link p-0" title="Which days will you come?">Registro</a>
-                  </li>
-                  <li class="nav-item g-ml-15--lg g-mb-7 g-mb-0--lg">
-                    <a href="https://wuhu.posadasparty.com/" class="nav-link p-0" title="Upload your productions here!">Extranet</a>
-                  </li>
-                  <li class="nav-item g-ml-15--lg g-mb-0--lg" id="translate2english">
-                    <a href="https://posadasparty-com.translate.goog/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" class="nav-link p-0">-ENGLISH-</a>
-                  </li>
-                  <li class="nav-item g-ml-15--lg g-mb-0--lg" id="translate2spanish" style="display:none">
-                    <a href="https://posadasparty.com" class="nav-link p-0 notranslate">ESPAÑOL</a>
-                  </li>
-                </ul>
+              <div class="header-menu d-flex align-items-center ml-auto">
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse align-items-center flex-sm-row" id="navBar" data-mobile-scroll-hide="true">
+                  <ul id="js-scroll-nav" class="navbar-nav header-nav text-uppercase g-font-weight-700 g-font-size-11 g-pt-20 g-pt-5--md">
+                    <li class="nav-item active">
+                      <a href="#home" class="nav-link p-0">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#whatis" class="nav-link p-0">¿Qué es?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#about" class="nav-link p-0">Competiciones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#guests" class="nav-link p-0">Normativa</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#gallery" class="nav-link p-0">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contact" class="nav-link p-0">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#registro" class="nav-link p-0" title="Which days will you come?">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://wuhu.posadasparty.com/" class="nav-link p-0" title="Upload your productions here!">Extranet</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Navigation -->
+
+                <div class="dropdown language-dropdown notranslate" translate="no">
+                  <button class="language-dropdown__toggle dropdown-toggle text-uppercase g-font-weight-700 g-font-size-11" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Idioma
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right notranslate" aria-labelledby="languageDropdown" translate="no">
+                    <a class="dropdown-item notranslate" translate="no" href="https://posadasparty.com/">ES</a>
+                    <a class="dropdown-item notranslate" translate="no" href="https://posadasparty-com.translate.goog/?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp">EN</a>
+                    <a class="dropdown-item notranslate" translate="no" href="https://posadasparty-com.translate.goog/?_x_tr_sl=es&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=wapp">PT</a>
+                    <a class="dropdown-item notranslate" translate="no" href="https://posadasparty-com.translate.goog/?_x_tr_sl=es&_x_tr_tl=fr&_x_tr_hl=fr&_x_tr_pto=wapp">FR</a>
+                    <a class="dropdown-item notranslate" translate="no" href="https://posadasparty-com.translate.goog/?_x_tr_sl=es&_x_tr_tl=de&_x_tr_hl=de&_x_tr_pto=wapp">DE</a>
+                  </div>
+                </div>
               </div>
-              <!-- End Navigation -->
 
               <!-- Responsive Toggle Button -->
               <button class="navbar-toggler btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-15 g-right-5" type="button"
@@ -885,12 +894,7 @@
 
 		<script>
 			if ($('#gt-nvframe').length) {
-				/*$('#translate2spanish').show();*/
-				$('#translate2english').hide();
 				$('#gt-nvframe').hide();
-			} else {
-				$('#translate2spanish').hide();
-				$('#translate2english').show();
 			}
 		</script>
 

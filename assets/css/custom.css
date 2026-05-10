@@ -184,6 +184,113 @@ section#home .img-fluid {
     padding: 60px 20px 20px 20px;
 }
 
+.header-nav {
+    flex-wrap: nowrap;
+    gap: clamp(8px, 1.25vw, 30px);
+    padding-right: 16px;
+    white-space: nowrap;
+}
+
+.header-nav .nav-item {
+    flex: 0 0 auto;
+}
+
+.language-dropdown {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    line-height: inherit;
+    z-index: 10000;
+}
+
+.language-dropdown .dropdown-menu {
+    min-width: 72px;
+    padding: 6px 0;
+    border: 0;
+    border-radius: 0;
+    background-color: rgba(0, 0, 17, 0.94);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+    opacity: 1;
+}
+
+.language-dropdown .dropdown-item {
+    padding: 6px 12px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.language-dropdown .dropdown-item:hover,
+.language-dropdown .dropdown-item:focus {
+    background-color: #f73859;
+    color: #fff;
+}
+
+.language-dropdown__toggle {
+    position: relative;
+    top: 1px;
+    display: block;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    font: inherit;
+    line-height: inherit;
+}
+
+.language-dropdown.show .language-dropdown__toggle {
+    color: #f73859 !important;
+}
+
+.language-dropdown:not(.show) .language-dropdown__toggle,
+.language-dropdown:not(.show) .language-dropdown__toggle:hover,
+.language-dropdown:not(.show) .language-dropdown__toggle:focus {
+    color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.language-dropdown__toggle:focus {
+    outline: 0;
+}
+
+@media (max-width: 767px) {
+    .header-menu {
+        width: 100%;
+        margin-left: 0 !important;
+        order: 10;
+    }
+
+    .header-menu .navbar-collapse {
+        width: 100%;
+        text-align: left;
+    }
+
+    .language-dropdown {
+        position: absolute;
+        top: 15px;
+        right: 48px;
+    }
+
+    .language-dropdown__toggle {
+        top: 0;
+    }
+
+    .header-nav {
+        flex-wrap: wrap;
+        gap: 0;
+        align-items: flex-start;
+        padding-right: 0;
+        white-space: normal;
+    }
+
+    .header-nav .nav-item {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+}
+
 div#calendario {
     margin-top: 120px;
 }

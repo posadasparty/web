@@ -32,6 +32,27 @@ html {
 	cursor: url('../img/cursors/cursor.cur'), auto;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+	cursor: inherit !important;
+}
+
+#gallery .js-prev,
+#gallery .js-next,
+#gallery [class*="u-carousel-indicators"] li,
+#gallery [class*="u-carousel-indicators"] span,
+#gallery .slick-dots li,
+#gallery .slick-dots li button,
+#gallery .u-pagi-control--v2,
+.fancybox-arrow,
+.fancybox-button,
+[data-fancybox-prev],
+[data-fancybox-next] {
+	cursor: inherit !important;
+}
+
 .social-network-link {
 	display: inline;
 }
@@ -231,7 +252,10 @@ section#home .img-fluid {
     color: #fff;
 }
 
-.language-dropdown__toggle {
+.language-dropdown__toggle,
+.language-dropdown__toggle:hover,
+.language-dropdown__toggle:focus,
+.language-dropdown__toggle:active {
     position: relative;
     top: 1px;
     display: block;
@@ -239,7 +263,7 @@ section#home .img-fluid {
     border: 0;
     background: transparent;
     color: rgba(255, 255, 255, 0.85);
-    cursor: pointer;
+    cursor: inherit !important;
     font: inherit;
     line-height: inherit;
 }
@@ -256,6 +280,10 @@ section#home .img-fluid {
 
 .language-dropdown__toggle:focus {
     outline: 0;
+}
+
+.language-dropdown:not(.show) .language-dropdown__toggle:hover {
+    color: #f73859 !important;
 }
 
 @media (max-width: 767px) {

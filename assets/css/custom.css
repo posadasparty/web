@@ -19,9 +19,12 @@ img.fitsize {
 	padding-top: 110px;
 }
 
-@media (max-width: 767px) {
-.hero {
-}
+h4 {
+	margin-top: 30px;
+	border-left: 3px solid #f73859;
+	padding-left: 5px;
+	font-size: 1.3rem;
+	margin-bottom: 10px;
 }
 
 html {
@@ -395,7 +398,7 @@ section,
 .g-bg-white-opacity-0_9,
 .g-bg-white--hover:hover,
 .g-theme-bg-gray-light-v1 {
-    background-color: #000 !important;
+    background-color: #0f121b !important;
 }
 
 body,

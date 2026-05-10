@@ -1,5 +1,9 @@
 /* Add here all your css styles (customizations) */
 
+body {
+	line-height: 1.5;
+}
+
 /* evita scroll horizontal por desborde en móviles con pantalla pequeña */
 main {
 	overflow-x: hidden;
@@ -27,6 +31,59 @@ html {
 
 .social-network-link {
 	display: inline;
+}
+
+footer a {
+	line-height: 2.0;
+}
+
+.footer-social {
+	position: relative;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	margin: 0 0 28px;
+	background: transparent !important;
+}
+
+.footer-social__button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border: 1px solid rgba(255, 255, 255, 0.55);
+	border-radius: 4px;
+	background: transparent !important;
+	color: #fff;
+	font-size: 20px;
+	line-height: 1;
+	transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.footer-social__button:hover,
+.footer-social__button:focus {
+	background: #fff !important;
+	border-color: #fff;
+	color: #111;
+	text-decoration: none;
+}
+
+.footer-copyright {
+	position: relative;
+	z-index: 999;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+}
+
+.footer-copyright > div {
+	padding: 0 6px;
 }
 
 .event-video-effect {
